@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chrset = "UTF-8" />
+        <title>Log In</title>
+        <style>
+            body {
+                background-image : url(BImage.jpg);
+                background-size :cover;
+                background-repeat:  no-repeat ;
+                background-attachment:fixed; 
+            }  
+            .square {
+               width: 500px;
+               height: 400px;
+               background-color: rgba(226, 235, 238, 0.964);
+               position : absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               border-radius: 30px;
+               display: flex;
+               justify-content: center;
+               align-items: center ;  
+            }
+            .dcontent {
+               text-align: center;
+                color: black;
+                font-family: Tahoma;
+    
+            }
+            .cssemail{
+                width: 200px;
+                height: 20px;
+                border : 2px solid #6ca5c0 ;
+                border-radius: 20px;
+
+            }
+            .csspassword{
+                width: 200px;
+                height: 20px;
+                border : 2px solid #6ca5c0 ;
+                border-radius: 20px;
+            }
+            label{
+                font-size: 17.5px;
+            }
+            .subutton {
+                background-color: rgba(226, 235, 238, 0);
+                color: black ;
+                width: 80px;
+                height: 30px;
+                border : 1px solid #6ca5c0 ;
+                border-radius: 30px;
+                font-size: 14px;
+                font-family: Tahoma;
+            } 
+            .subutton:hover {
+                /* background-color: #6ca5c0; */
+                background-color: #a2ccdf; 
+                border : 0px ;   
+            }
+            table{
+                text-align: center;
+                border-spacing : px;
+            }
+            td{
+                padding: 15px 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = square>
+            <div class = dcontent > 
+                <h1>Log In</h1><br>
+                <form name = "logIn" method = "post" action = "Main.html">
+                    <table>
+                        <tr>
+                            <td><label for = " lemail">Email:</label></td>
+                            <td><input type = "email" name = "email" id ="lemail" required = "required" class = "cssemail"></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for ="lpassword">Password: </label></td>
+                            <td><input type="password" name="password" id="lpassword"  required = "required" class="csspassword"></td>
+                        </tr>
+                    </table>
+                    <br><input type="submit" value = "Log In" class = "subutton">
+                </form>
+                <br>
+                <a href = "SignUp.html" title = "Create New Account" class = "newAcount">Create New Account</a>
+            </div>
+        </div>
+
+    </body>
+</html>

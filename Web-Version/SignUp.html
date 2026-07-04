@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <style>
+        body {
+            background-image : url(BImage.jpg);
+                background-size :cover;
+                background-repeat:  no-repeat ;
+                background-attachment:fixed; 
+        }
+            .square {
+               
+                width: 550px;
+                height: 500px;
+                background-color: rgba(226, 235, 238, 0.964);
+                position : absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center ;  
+            }
+             .dcontent {
+               text-align: center;
+                color: black;
+                font-family: Tahoma;
+    
+            }
+             .cssfname, .csslname,.cssemail, .csspassword, .cssmc {
+                width: 200px;
+                height: 20px;
+                border : 2px solid #6ca5c0 ;
+                border-radius: 20px;
+
+            }
+            label{
+                font-size: 17.5px;
+            }
+            .csssubmit {
+                background-color: rgba(226, 235, 238, 0);
+                color: black ;
+                width: 80px;
+                height: 30px;
+                border : 1px solid #6ca5c0 ;
+                border-radius: 30px;
+                font-size: 14px;
+                font-family: Tahoma;
+            } 
+            .csssubmit:hover {
+                /* background-color: #6ca5c0; */
+                background-color: #a2ccdf; 
+                border : 0px ;   
+            }
+            table{
+                text-align: center;
+                border-spacing : px;
+            }
+            td{
+                padding: 15px 2px;
+            }
+    </style>
+
+</head>
+<body>
+    <div class = "square">
+        <div class = "dcontent">
+            <h1>Sign In</h1>
+            <form name="SignIn" method="post" action="LogIn.html">
+                <table>
+                    <tr>
+                        <td><label for ="Lfrist">Frist Name: </label></td>
+                        <td><input type="text" name="fname" id="Lfrist" required="required" class="cssfname" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "Llast">Last Name:</label></td>
+                        <td><input type="text" name="lname" id="Llast" required = "required" class = "csslname" ></td>
+                    </tr>
+                    <tr>
+                        <td><lable for ="lemail" >Email: </lable></td>  
+                        <td><input type="email" name="email" id="lemail"required="required" class="cssemail"><td>
+                    </tr>
+                    <tr>
+                      <td><label for="lpassword">Password: </label></td>  
+                      <td><input type="password" name="password" id="lpassword" required="required" class="csspassword"></td>
+                    </tr>
+                    <tr>
+                        <td><lable for = lmcode>Manager Code: </lable></td>  
+                        <td><input type= "text" name = "MCode" id = "lmcode" class="cssmc"></td>
+                    </tr>
+                </table>
+                <input type = "submit" value = "Sign In" class ="csssubmit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
